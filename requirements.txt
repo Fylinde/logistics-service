@@ -1,0 +1,31 @@
+# FastAPI and ASGI server
+fastapi
+uvicorn
+
+# SQLAlchemy for ORM
+SQLAlchemy
+
+# Alembic for database migrations
+alembic
+
+# Pydantic for request and response validation
+pydantic
+
+# Databases (PostgreSQL or MySQL, you can choose which to use)
+psycopg2-binary    # PostgreSQL driver (if using PostgreSQL)
+# mysqlclient==2.1.0       # MySQL driver (uncomment if using MySQL)
+
+# Python-multipart for handling form data and file uploads
+python-multipart
+
+# RabbitMQ client (if you plan to use message queues for integration)
+pika
+
+# Testing utilities
+pytest
+pytest-asyncio
+
+# Other useful libraries
+requests        # For making API calls to external services
+python-dotenv
+alembic
