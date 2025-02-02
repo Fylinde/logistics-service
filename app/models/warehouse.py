@@ -9,7 +9,7 @@ class WarehouseModel(BaseModel):
     location = Column(String, nullable=False)  # Store lat, long coordinates as a string
     capacity = Column(Float, nullable=False)   # Total capacity of the warehouse
     available_space = Column(Float, nullable=False)  # Remaining space in the warehouse
-    vendor_id = Column(Integer, ForeignKey("vendors.id"))
+    seller_id = Column(Integer, ForeignKey("sellers.id"))
     
     
     stocks = relationship("ProductStockModel", back_populates="warehouse")

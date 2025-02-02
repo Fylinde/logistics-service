@@ -11,7 +11,7 @@ class WarehouseCreate(BaseModel):
     location: str
     capacity: float
     available_space: float
-    vendor_id: int  # Linking the warehouse to a vendor
+    seller_id: int  # Linking the warehouse to a seller
 
     class Config:
         orm_mode = True
@@ -27,7 +27,7 @@ class WarehouseUpdate(BaseModel):
 
 class Warehouse(WarehouseBase):
     id: int
-    vendor_id: int
+    seller_id: int
 
     class Config:
         orm_mode = True
